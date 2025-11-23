@@ -2026,7 +2026,7 @@
 
     .about-container {
       width: 100%;
-      max-width: 900px; /* Reduced width as requested */
+      max-width: 1200px; /* Expanded for more content */
       text-align: center;
     }
 
@@ -2081,16 +2081,17 @@
 
     .about-text {
       width: 100%;
-      max-width: 400px; /* Reduced width as requested */
+      max-width: 550px; /* Expanded for more content */
       background: linear-gradient(135deg, #FFE55C, #FFF9C4);
-      padding: 2rem;
+      padding: 2.5rem;
       border-radius: 20px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       text-align: left;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 500px; /* Increased height as requested */
+      height: auto; /* Auto height for flexible content */
+      min-height: 500px; /* Minimum height maintained */
     }
 
     .about-text h2 {
@@ -3662,15 +3663,15 @@
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#services">Service</a></li>
-      <li><a href="#about">Tradings</a></li>
-      <li><a href="#testimonials">About Us</a></li>
+      <li><a href="#tradings">Tradings</a></li>
+      <li><a href="#about">About Us</a></li>
     </ul>
   </nav>
   <section class="hero" id="home">
     <h1>Trade Smarter. Grow Faster. <br>Pass Every Challenge.</h1>
     <h1></h1>
     <!-- NEW BUTTON -->
-    <button class="dot-arrow-button">
+    <button class="dot-arrow-button" onclick="window.location.href='#services'">
       <!-- LAYER 1: The Green Sliding Background and Stepped Arrow Stream -->
       <div class="slide-layer"></div>
       <!-- LAYER 2: The Content (Icon and Text) -->
@@ -3963,9 +3964,9 @@
         <div class="about-text">
           <h2>PRIMEVERSE</h2>
           <p>
-            Welcome to PrimeVerse, Tamil Nadu’s most trusted prop-firm development community.
-We help traders pass Phase 1, Phase 2, and Master Accounts with precision, discipline, and system-driven frameworks.
-Start your journey toward consistent funding, payouts, and long-term account scaling.
+PRIMEVERSE is a dedicated community focused on helping traders pass Prop Firm Challenges and achieve consistent payouts. Our team has developed a step-by-step framework and a proven trading system designed to guide you through Phase 1, Phase 2, and Master accounts with clarity and confidence.
+We operate with a long-term vision, building strong account-scaling strategies and practical methods that support traders at every stage. Whether you are struggling to pass challenges or finding it difficult to maintain consistency, PRIMEVERSE provides the right structure, guidance, and support to help you achieve clear results.
+If you are ready to improve your performance, avoid costly mistakes, and progress the right way, join PRIMEVERSE — where your success is our mission.
           </p>
           <p>
             Our focus is helping you grow with clarity, confidence, and consistency.
@@ -3976,7 +3977,7 @@ Start your journey toward consistent funding, payouts, and long-term account sca
   </section>
 
   <!-- TRADING PROOF GALLERY SECTION -->
-  <section style="padding: 100px 40px; background: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%); position: relative; overflow: hidden;">
+  <section id="tradings" style="padding: 100px 40px; background: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%); position: relative; overflow: hidden;">
     <!-- Decorative background elements -->
     <div style="position: absolute; top: 0; left: 0; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%); border-radius: 50%; pointer-events: none;"></div>
     <div style="position: absolute; bottom: 0; right: 0; width: 400px; height: 400px; background: radial-gradient(circle, rgba(0, 7, 23, 0.05) 0%, transparent 70%); border-radius: 50%; pointer-events: none;"></div>
@@ -4168,22 +4169,7 @@ Start your journey toward consistent funding, payouts, and long-term account sca
               <svg style="width:1.25rem; height:1.25rem; margin-right:0.25rem;" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
               </svg>
-              <span style="font-weight:600;">4.9/5 Rating</span>
-            </div>
-            <p class="testimonials-rating-text">Based on 1,200+ student reviews</p>
-            <div class="testimonials-features animate-fadeInUp animation-delay-400">
-              <div class="testimonials-feature">
-                <div class="testimonials-feature-dot"></div>
-                <span class="testimonials-feature-text">Daily Live Trading Sessions</span>
-              </div>
-              <div class="testimonials-feature">
-                <div class="testimonials-feature-dot"></div>
-                <span class="testimonials-feature-text">Personal Mentorship</span>
-              </div>
-              <div class="testimonials-feature">
-                <div class="testimonials-feature-dot"></div>
-                <span class="testimonials-feature-text">Active Community Support</span>
-              </div>
+              <span style="font-weight:600;">4.5/5 Rating</span>
             </div>
           </div>
 
@@ -4223,18 +4209,6 @@ Thank full for this group and mentor guidance for affordable price.
                   <p class="testimonial-location">COIMBATORE</p>
                   <p class="testimonial-text">
                     I've been trading since 2020 and most courses lacked real guidance. Found the Primeverse Community in 2024, and their practical approach stood out. Daily live sessions and weekly discussions changed my learning experience. Now my trading vision is clear and focused.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Testimonial Card 4 -->
-              <div class="testimonial-card animate-fadeInUp animation-delay-400">
-                <img src="./assets/girl2.png" alt="PHaasini R class="testimonial-avatar">
-                <div class="testimonial-content">
-                  <p class="testimonial-name">PHaasini R/p>
-                  <p class="testimonial-location">KUMBAKONAM</p>
-                  <p class="testimonial-text">
-                    Joining AlchemyX is one of my best trading decisions. The course is well-structured and makes ICT concepts easy to grasp. Live sessions offer real market experience and deepen understanding. The Discord community keeps me motivated and learning every day.
                   </p>
                 </div>
               </div>
@@ -4390,6 +4364,7 @@ Thank full for this group and mentor guidance for affordable price.
 
                 <div class="propfirms-contact-info">
                     <a href="mailto:primeverseofficial04@gmail.com">primeverseofficial04@gmail.com</a>
+                    <a href="tel:+918754221678" style="display: block; margin-top: 8px;">+91-8754221678</a>
                 </div>
             </div>
 
@@ -4419,8 +4394,8 @@ Thank full for this group and mentor guidance for affordable price.
                     <h3>COURSES</h3>
                     <ul>
                         <li><a href="#">PrimeStart Program</a></li>
-                        <li><a href="#">AlchemyX Trading Program</a></li>
-                        <li><a href="#">Personal Mentorship</a></li>
+                        <li><a href="#">PrimeAdvance Program</a></li>
+                        <li><a href="#">PrimeElite Program</a></li>
                     </ul>
                 </div>
             </div>
@@ -4937,10 +4912,10 @@ Thank full for this group and mentor guidance for affordable price.
   }
 
   // Contact numbers for other programs
-  const PRIME_ADVANCE_CONTACT = '+91-9876543210'; // Replace with actual number
-  const PRIME_ELITE_CONTACT = '+91-8765432109';   // Replace with actual number
-  const WHATSAPP_LINK_ADVANCE = 'https://wa.me/919876543210?text=I%20am%20interested%20in%20PrimeAdvance%20Program';
-  const WHATSAPP_LINK_ELITE = 'https://wa.me/918765432109?text=I%20am%20interested%20in%20PrimeElite%20Program';
+  const PRIME_ADVANCE_CONTACT = '+91-8754221678'; // Updated phone number
+  const PRIME_ELITE_CONTACT = '+91-8754221678';   // Updated phone number
+  const WHATSAPP_LINK_ADVANCE = 'https://wa.me/918754221678?text=I%20am%20interested%20in%20PrimeAdvance%20Program';
+  const WHATSAPP_LINK_ELITE = 'https://wa.me/918754221678?text=I%20am%20interested%20in%20PrimeElite%20Program';
 
   function contactPrimeAdvance() {
     const userChoice = confirm(
